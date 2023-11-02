@@ -18,34 +18,38 @@ p {
   font-weight: 300;
   font-size: 1rem;
 }
+a {
+  color: black;
+}
 
 /* Navigation and Links */
 .topheader {
   margin: 12px auto;
-  background-color: rgb(198, 198, 198);
   border-radius: 3rem;
   padding: .5rem;
   display: flex;
 }
 .topcontent {
   margin: auto;
-  width: 70%;
+  width: 1200px
 }
 .topnav {
-  margin: auto;
+  margin: .5rem auto;
   width: 50%;
 }
 .topnav a {
   padding: 0.25rem 1rem;
   text-decoration: none;
   text-align: center;
+  margin: 0rem 1rem;
+
 }
 .topnav a:hover {
-  color: white;
-  background-color: black;
+  color: rgb(76, 76, 76);
+  background-color: rgb(183, 206, 225);
   border-radius: 2rem;
   padding: 0.25rem 1rem;
-  transition: 1s;
+  transition: .5s;
 }
 /* The Hero Section */
 .herotext {
@@ -80,8 +84,8 @@ button {
 }
 
 button:hover {
-color: blue;
-transition: 1s;
+color: black;
+transition: .5s;
 }
 /* this is for testing margin margin is the space between that elemetn and something else. */
 
@@ -130,13 +134,13 @@ button {
 /* this is the standard for border boxes. just border: */
 .pagepost {
   border-radius: 15px;
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(192, 213, 230);
   /* this is for testing margin margin is the space between that elemetn and something else. */
   margin: 1rem;
   max-width: 30%;
 }
 .postwords {
-  background-color: rgb(185, 185, 185);
+  background-color: #fdfdfd;
   margin: 1rem;
   padding: 1rem;
 
@@ -159,7 +163,7 @@ footer {
   display: inline-block;
   height: 200px;
   width: 200px;
-  background-color: grey;
+  background-color: rgb(255, 255, 255);
   border: 1px solid black;
   border-radius: 1rem;
   padding: 1rem;
@@ -190,4 +194,12 @@ footer {
 
 footer {
   margin: 2rem;
+}
+.blank {
+  height: 200px;
+}
+
+.bullet-list {
+  margin: 0rem auto;
+padding: 0px
 }
