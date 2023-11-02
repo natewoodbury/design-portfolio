@@ -1,23 +1,39 @@
+/* this is for things that apply to the entire document */
 * {
-  font-family: "Gill Sans", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Outfit', sans-serif;
 }
 
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+/* Navigation and Links */
 .topheader {
-  margin: 0 auto;
-  border: 1px solid magenta;
+  margin: 12px auto;
+  background-color: rgb(198, 198, 198);
+  border-radius: 3rem;
+  padding: .5rem;
+  display: flex;
 }
 .topcontent {
   margin: auto;
   width: 70%;
-  border: 1px solid blue;
 }
 .topnav {
   margin: auto;
   width: 50%;
-  border: 1px solid green;
 }
 .topnav a {
   padding: 0.25rem 1rem;
@@ -31,14 +47,23 @@
   padding: 0.25rem 1rem;
   transition: 1s;
 }
+/* The Hero Section */
 .herotext {
   margin: auto;
 }
 .hero {
   margin: auto;
   width: 50%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+.profile-img {
+  border-radius: 50%;
+  max-width: 250px;
+}
+/* Buttons for the Docutment */
 /*this is for testing padding around buttons. padding is internal between border and content top | right | bottom | left */
 button {
   /* 
@@ -46,33 +71,24 @@ button {
     padding-right: 1rem;
     padding-top: .5rem;
     padding-bottom: .5rem; */
-  border-radius: 10px;
+  border-radius: .5rem;
   /* vertical | horizontal   */
   padding: 0.25rem 2rem;
   border: 0px;
+  margin: 1rem .25rem;
+  cursor: pointer;
+}
+
+button:hover {
+color: blue;
+transition: 1s;
 }
 /* this is for testing margin margin is the space between that elemetn and something else. */
 
-section {
-  width: 60%;
-  border: 1px solid magenta;
-  margin: auto;
-}
 .maincontent {
   margin: auto;
   padding: 2rem;
-}
-h1 {
-  color: darkblue;
-}
-
-h1,
-h2 {
-  text-align: center;
-}
-
-p {
-  text-align: left;
+  display: flex;
 }
 .buttonshare {
   margin: 1rem;
@@ -81,7 +97,6 @@ body {
   margin: auto;
   max-width: 960px;
 }
-
 button {
   background-color: rgb(20, 172, 233);
   color: aliceblue;
@@ -96,10 +111,11 @@ button {
 #signup {
   background-color: teal;
 }
-
 /*this is a class selector, we set the class to titlepost for the h1 tags*/
 .titlepost {
   color: rgb(45, 45, 45);
+  text-align: center;
+  margin: .5rem;
   /* background-color: rgb(49, 49, 49); */
   /* padding: .25rem; */
 }
@@ -113,11 +129,11 @@ button {
 
 /* this is the standard for border boxes. just border: */
 .pagepost {
-  border: 2px solid grey;
   border-radius: 15px;
   background-color: rgb(223, 223, 223);
   /* this is for testing margin margin is the space between that elemetn and something else. */
-  margin-top: 1rem;
+  margin: 1rem;
+  max-width: 30%;
 }
 .postwords {
   background-color: rgb(185, 185, 185);
@@ -127,7 +143,7 @@ button {
   border-radius: 15px;
 }
 .titlesub {
-    text-align: center;
+    font-size: 1.25rem;
 }
 footer {
   text-align: center;
@@ -155,10 +171,23 @@ footer {
   width: 50%;
   margin: auto;
 }
-
-.subheader {
-  text-align: center;
-}
 /* rems is good, but ems is useful for scaling elements to the root element. like a buttons corner radius that you want to scale to whatever the rem size is using ems*/
 
 /* opacity effects the element and all child elements, alpha cahnnel is just the thing your coloring */
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-sm {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+footer {
+  margin: 2rem;
+}
