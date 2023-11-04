@@ -9,6 +9,7 @@
 h1 {
   font-weight: 700;
   font-size: 3rem;
+  margin: 2rem 0rem;
 }
 h2 {
   font-weight: 600;
@@ -39,7 +40,8 @@ color: #4281A4;
   margin: 0px 0rem;
 }
 .hero-text p {
-  margin: 1rem 0rem;
+  margin: 2rem 0rem;
+  max-width: 500px;
 }
 .hero {
   /* margin: 1rem 2rem; */
@@ -47,7 +49,7 @@ color: #4281A4;
 }
 .profile-img {
   border-radius: 50%;
-  max-width: 100px;
+  max-width: 150px;
 }
 /* Buttons for the Docutment */
 /*this is for testing padding around buttons. padding is internal between border and content top | right | bottom | left */
@@ -89,7 +91,7 @@ button {
 /*this is a class selector, we set the class to titlepost for the h1 tags*/
 .titlepost {
   color: white;
-
+margin: 2rem 0rem;
   background-color: #48A9A6;
   padding: 1rem;
   font-weight: 100;
@@ -153,6 +155,9 @@ footer {
 
 
 .img-mockup {
-  max-width: 500px;
-  margin: 0rem 1rem;
+max-width: 350px ;
+max-height: 250px;
+  object-fit: cover;
+  border-radius: .5em;
+  border: 3px solid #48a9a6ac;
 }
