@@ -2,7 +2,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   font-family: "Outfit", sans-serif;
 }
 
@@ -16,55 +16,38 @@ h2 {
 }
 p {
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 a {
   color: black;
 }
 
 /* Navigation and Links */
-.topheader {
-  margin: 12px auto;
-  border-radius: 3rem;
-  padding: 0.5rem;
-  display: flex;
-}
-.topcontent {
-  margin: auto;
-  width: 1200px;
-}
 .topnav {
-  margin: 0.5rem auto;
-  width: 50%;
+  margin: 5rem 0rem
 }
 .topnav a {
-  padding: 0.25rem 1rem;
+  margin: 0rem 2rem 0rem 0rem;
   text-decoration: none;
-  text-align: center;
-  margin: 0rem 1rem;
 }
 .topnav a:hover {
-  color: rgb(76, 76, 76);
-  background-color: rgb(183, 206, 225);
-  border-radius: 2rem;
-  padding: 0.25rem 1rem;
+color: #4281A4;
   transition: 0.5s;
 }
 /* The Hero Section */
-.herotext {
-  margin: auto;
+.hero-text {
+  margin: 0px 0rem;
+}
+.hero-text p {
+  margin: 1rem 0rem;
 }
 .hero {
-  margin: auto;
-  width: 50%;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* margin: 1rem 2rem; */
+
 }
 .profile-img {
   border-radius: 50%;
-  max-width: 250px;
+  max-width: 100px;
 }
 /* Buttons for the Docutment */
 /*this is for testing padding around buttons. padding is internal between border and content top | right | bottom | left */
@@ -88,39 +71,29 @@ button:hover {
 }
 /* this is for testing margin margin is the space between that elemetn and something else. */
 
-.maincontent {
-  margin: auto;
-  padding: 2rem;
-  display: flex;
-}
 .buttonshare {
   margin: 1rem;
 }
-body {
-  margin: auto;
-  max-width: 960px;
-}
+
 button {
   background-color: rgb(20, 172, 233);
   color: aliceblue;
   font-size: 18px;
   text-align: center;
 }
-.topbutton {
-  margin: auto;
-  width: 500px;
-}
+
 /* this is an ID selector*/
 #signup {
   background-color: teal;
 }
 /*this is a class selector, we set the class to titlepost for the h1 tags*/
 .titlepost {
-  color: rgb(45, 45, 45);
-  text-align: center;
-  margin: 0.5rem;
-  /* background-color: rgb(49, 49, 49); */
-  /* padding: .25rem; */
+  color: white;
+
+  background-color: #48A9A6;
+  padding: 1rem;
+  font-weight: 100;
+  font-size: 2rem
 }
 /*this is for testing border boxes. width | style | color|*/
 /* .pagepost {
@@ -129,20 +102,15 @@ button {
   border-style: solid;
   box-sizing: border-box;
 } */
+.postwords {
 
+}
 /* this is the standard for border boxes. just border: */
 .pagepost {
-  border-radius: 15px;
-  background-color: rgb(192, 213, 230);
-  /* this is for testing margin margin is the space between that elemetn and something else. */
-  margin: 1rem;
-  max-width: 30%;
+padding: 1rem;
 }
-.postwords {
-  background-color: #fdfdfd;
-  margin: 1rem;
-  padding: 1rem;
-
+.pagepost p {
+  padding: 1rem 0rem;
   border-radius: 15px;
 }
 .titlesub {
@@ -158,35 +126,20 @@ footer {
 .contentcard {
   width: 1200px;
 }
-.cardwork {
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid black;
-  border-radius: 1rem;
-  padding: 1rem;
-  margin: 1rem;
-}
-/* this is for buttons within teh cardwork element*/
-.cardwork button {
-  background-color: red;
-  width: 50%;
-  margin: auto;
-}
 /* rems is good, but ems is useful for scaling elements to the root element. like a buttons corner radius that you want to scale to whatever the rem size is using ems*/
 
 /* opacity effects the element and all child elements, alpha cahnnel is just the thing your coloring */
 
 /* Utility Classes */
 .container {
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 15px;
+  /* border: 1px solid black */
 }
 
 .container-sm {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -198,8 +151,8 @@ footer {
   height: 200px;
 }
 
-.bullet-list {
-  margin: 0rem auto;
-  padding: 0px;
-  font-weight: 200;
+
+.img-mockup {
+  max-width: 500px;
+  margin: 0rem 1rem;
 }
